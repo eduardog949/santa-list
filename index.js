@@ -1,5 +1,5 @@
 let buttEl = document.getElementById("butt-el");
-let myInput = document.getElementById("myInput");
+let myInput = document.getElementById("myinput");
 
 let words = [
   "Oof, too soon to tell! Come back later with milk and cookies.",  
@@ -10,7 +10,7 @@ let words = [
 
 function refresh(){
   buttEl.textContent = "Find out if you are on the naughty or nice list!";
-}
+  }
 
 function random() {
   const input = document.getElementById("myInput");
@@ -20,8 +20,24 @@ function random() {
   
   if (value === "") {
     buttEl.textContent = "Please enter a valid name"
+  } else if (value === "Eden Gutierrez") {
+    buttEl.textContent = "Congratulations Eden, you have made it on Santa's nice list!"
+  } else if (value === "David Marquez") {
+    buttEl.textContent = "Congrats dude, you are on the nice list!"
+  } else if (value === "Lucy Gutierrez") {
+    buttEl.textContent = "Congratulations Lucy, you have made it on Santa's nice list!"
+  } else if (value === "Bella Gutierrez") {
+    buttEl.textContent = "Congratulations Bella, you have made it on Santa's nice list!"
+  } else if (value === "Jacob Marquez") {
+    buttEl.textContent = "Congratulations, word around the North Pole is.. you made it on the nice list!"
+  } else {
+    buttEl.textContent = "We all do some things we aren't supposed to! You barely made the cut this year but make sure you are extra good next year!"
   }
-  }
+}
+
+  
+  
+
 //adding snowfall//
 
 
@@ -107,3 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener("visibilitychange", handleVisibilityChange);
 });
 
+
+
+
+Resources
